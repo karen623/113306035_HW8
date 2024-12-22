@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="HW8.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <!-- div: define a region -->
+    <h1>JS Calculator</h1>
+    <!-- hi: main topic -->
+    <form id="calculator-form">
+      <label for="number1">Number 1</label>
+      <!-- label: 顯示輸入匡的描述文字 -->
+      <input type="number" id="number1" required>
+      <!-- input: define an input box, type: numbers only, required: must fill number -->
+
+      <label for="number2">Number 2</label>
+      <input type="number" id="number2" required>
+
+      <label for="operator">Operate way?</label>
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <!-- select: 定義一個下拉選單 -->
+
+      <button type="submit" id="calculate-btn">Add</button>
+    </form>
+    <p class="result">Result = <span id="result">0.00</span></p>
+    <!-- span: 嵌入計算出的結果 -->
+  </div>
+  <script src="HW8.js"></script>
+</body>
+</html>

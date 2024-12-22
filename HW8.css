@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+/*  flex: set the page as flexbox, 方便水平和垂直對齊*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator-container {
+  background: #fff;
+  border-radius: 10px;
+/*  設置圓腳邊匡*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  width: 320px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+/*  讓每個標籤站一行*/
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/*輸入匡下拉選單的樣式*/
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #855d35;
+  color: white;
+  cursor: pointer;
+/*  當鼠標懸停時顯示手指圖示*/
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #6b4a2b;
+}
+/*當鼠標懸停在按鈕時上的樣式*/
+
+.result {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
